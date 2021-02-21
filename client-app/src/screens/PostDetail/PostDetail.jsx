@@ -29,7 +29,7 @@ const PostDetail = (props) => {
                 <img className="post-detail-image" src={post.imgURL} alt={post.name} />
                 <div className="detail">
                     <div className="name">{post.name}</div>
-                    <div className="description">{post.content}</div>
+                    <div className="content">{post.content}</div>
                     <div className="button-container">
                         <button className="edit-button"><Link className="edit-link" to={`/posts/${post._id}/edit`}>Edit</Link></button>
                         <button className="delete-button" onClick={() => deletePost(post._id)}>Delete</button>
