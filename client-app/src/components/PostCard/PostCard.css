@@ -1,5 +1,6 @@
 .post-card {
-  padding: 0 20px;
+  padding: 20px;
+  margin: 20px;
 }
 
 .card {
@@ -17,6 +18,7 @@
 
 .post-card-image {
   width: 300px;
+  height: 300px;
 }
 
 .post-card a {

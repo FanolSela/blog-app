@@ -29,7 +29,7 @@ const PostCreate = (props) => {
     }
 
     if (isCreated) {
-        return <Redirect to={`/posts`} />
+        return <Redirect to={`/`} />
     }
     return (
         <Layout user={props.user}>
@@ -48,7 +48,6 @@ const PostCreate = (props) => {
                     placeholder='Image Link'
                     value={post.imgURL}
                     name='imgURL'
-                    required
                     onChange={handleChange}
                 />
                 <textarea

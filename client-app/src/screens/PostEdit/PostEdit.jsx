@@ -45,7 +45,7 @@ const PostEdit = (props) => {
 
     return (
         <Layout user={props.user}>
-            <div className="product-edit">
+            <div className="post-edit">
                 <div className="image-container">
                     <img className="edit-post-image" src={post.imgURL} alt={post.name} />
                     <form onSubmit={handleSubmit}>
@@ -54,7 +54,6 @@ const PostEdit = (props) => {
                             placeholder='Image Link'
                             value={post.imgURL}
                             name='imgURL'
-                            required
                             onChange={handleChange}
                         />
                     </form>
@@ -69,18 +68,8 @@ const PostEdit = (props) => {
                         autoFocus
                         onChange={handleChange}
                     />
-                    <input
-                        className="input-price"
-                        placeholder='Price'
-                        value={post.price}
-                        name='price'
-                        required
-                        onChange={handleChange}
-                    />
                     <textarea
                         className="textarea-content"
-                        rows={10}
-                        cols={78}
                         placeholder='Content'
                         value={post.content}
                         name='content'

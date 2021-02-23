@@ -9,7 +9,6 @@ const PostCard = (props) => {
         <div className="post-card-title">{props.title}</div>
         <img className="post-card-image" src={props.imgURL} alt={props.name} />
         <div className="post-card-content">{props.content}</div>
-        <div>Look</div>
       </Link>
     </div>
   );
