@@ -2,9 +2,11 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: turquoise;
 }
 
 .layout-children {
+  background-color: turquoise;
   flex: 2;
 }
 
