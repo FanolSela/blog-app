@@ -52,7 +52,7 @@ const PostCreate = (props) => {
                 />
                 <textarea
                     className="textarea-content"
-                    rows={10}
+                    rows={5}
                     placeholder='Content'
                     value={post.content}
                     name='content'

@@ -4,8 +4,6 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  width: 100%;
   justify-content: space-evenly;
   display: flex;
   align-items: center;
@@ -25,6 +23,7 @@ input, textarea {
   border: 1px solid lightgray;
   border-radius: 5px;
   padding: 10px;
+  margin: 20px;
   width: 50%;
   display: flex;
   justify-content: center;
