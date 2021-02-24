@@ -18,13 +18,13 @@ class PostCards extends Component {
 
   render() {
 
-    const POSTS = this.state.posts.reverse().map((post, index) =>
-      index < 8 ? <PostCard _id={post._id} name={post.title} imgURL={post.imgURL} key={index} /> : null
+    const POSTS = this.state.posts.map((post, index) =>
+      <PostCard _id={post._id} name={post.title} imgURL={post.imgURL} key={index} />
     )
 
     return (
       <div className="post-cards">
-        <div className="latest">Latest Posts!</div>
+        <div className="check-posts">Check out the Posts!</div>
         <div className="cards">
           {POSTS}
         </div>

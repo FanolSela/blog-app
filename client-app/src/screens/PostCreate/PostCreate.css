@@ -50,9 +50,9 @@ textarea {
   background-color: black;
   color: white;
   cursor: pointer;
-  width: 10%;
   display: flex;
   justify-content: center;
+
 }
 
 @media (max-width: 500px) {
