@@ -27,9 +27,9 @@ export const createPost = async post => {
   }
 }
 
-export const updatePost = async (id, product) => {
+export const updatePost = async (id, post) => {
   try {
-    const response = await api.get(`/posts/${id}`, product)
+    const response = await api.get(`/posts/${id}`, post)
     return response.data
   } catch (error) {
     throw error

@@ -6,13 +6,17 @@ const postsRoutes = require('./routes/posts');
 const db = require('./connection/connection')
 const PORT = process.env.PORT || 3000
 
-const app = express()
+const app = express();
 
 app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))
 
-app.use('/api', postsRoutes)
+app.get('/', (req, res) => {
+  res.send("This is root!");
+});
+
+app.use('/api', postsRoutes);
 
 db.on('error', console.error.bind(console, "MongoDB connection error:"))
 
